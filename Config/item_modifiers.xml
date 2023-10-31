@@ -1,0 +1,21 @@
+<FRK>
+	<append xpath="/item_modifiers">
+		
+		<item_modifier name="modArmorVIPBoots" installable_tags="armorFeet" modifier_tags="falldamage,JumpStrength" type="attachment">
+			<property name="UnlockedBy" value="perkParkour,modArmorSprungBootsSchematic"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="Material" value="Mleather"/>
+			<effect_group tiered="false">
+				<passive_effect name="JumpStrength" operation="perc_add" value=".3"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.5" tags="jumping"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffImpactBracing"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffImpactBracing"/>
+			</effect_group>
+		</item_modifier>
+
+	</append>
+
+</FRK>

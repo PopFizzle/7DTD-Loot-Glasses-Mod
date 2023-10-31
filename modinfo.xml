@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="VAL_VIP_Mods" />
+		<Description value="Adds a few VIP armor modifications to the game" />
+		<Author value="Valicar" />
+		<Version value="A20_1.0" />
+	</ModInfo>
+</xml>
